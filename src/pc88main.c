@@ -2745,7 +2745,7 @@ void	pc88main_init( int init )
 
 	/* フォント初期化 */
 
-  if( init == INIT_POWERON  ||  init == INIT_RESET ){
+  if( init == INIT_POWERON ){
 
     memory_reset_font();
   }else{

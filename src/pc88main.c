@@ -171,6 +171,7 @@ static	void	pcg_out_addr_high( byte addr )
     else             { src = pcg_data; }			    /* store */
 
     font_pcg[ 0x400 + (pcg_addr&0x3ff) ] = src;
+    screen_set_dirty_all();
   }
 }
 

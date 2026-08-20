@@ -416,7 +416,7 @@ static void init_variables(void)
    else
       sound_board = SOUND_I;
   
-   var.key = "q88_use_pcg-8100";
+   var.key = "q88_pcg-8100";
    
    if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
       use_pcg = (!strcmp(var.value, "enabled")) ? TRUE : FALSE;

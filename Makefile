@@ -225,6 +225,7 @@ else ifeq ($(platform), vita)
    FLAGS += -DVITA
    NEED_BPP := 16
    STATIC_LINKING = 1
+   CFLAGS += -std=gnu17
 
 # CTR (3DS)
 else ifeq ($(platform), ctr)
